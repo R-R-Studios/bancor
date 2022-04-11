@@ -3,11 +3,11 @@ pragma solidity ^0.4.11;
 /*
     Overflow protected math functions
 */
-contract SafeMath {
+contract SfeMath {
     /**
         constructor
     */
-    function SafeMath() {
+    function SfeMath() {
     }
 
     /**
@@ -18,7 +18,7 @@ contract SafeMath {
 
         @return sum
     */
-    function safeAdd(uint256 _x, uint256 _y) internal returns (uint256) {
+    function sfeAdd(uint256 _x, uint256 _y) internal returns (uint256) {
         uint256 z = _x + _y;
         assert(z >= _x);
         return z;
@@ -32,7 +32,7 @@ contract SafeMath {
 
         @return difference
     */
-    function safeSub(uint256 _x, uint256 _y) internal returns (uint256) {
+    function sfeSub(uint256 _x, uint256 _y) internal returns (uint256) {
         assert(_x >= _y);
         return _x - _y;
     }
@@ -45,7 +45,7 @@ contract SafeMath {
 
         @return product
     */
-    function safeMul(uint256 _x, uint256 _y) internal returns (uint256) {
+    function sfeMul(uint256 _x, uint256 _y) internal returns (uint256) {
         uint256 z = _x * _y;
         assert(_x == 0 || z / _x == _y);
         return z;

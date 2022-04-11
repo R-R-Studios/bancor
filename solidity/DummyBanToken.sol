@@ -1,15 +1,15 @@
 pragma solidity ^0.4.11;
 
-import './BasicERC20Token.sol';
-import './BancorFormula.sol';
+import './ERC20Token.sol';
+import './mula.sol';
 
-contract DummyBancorToken is BasicERC20Token, BancorFormula {
+contract DummyBanToken is ERC20Token, mula {
 
     string public standard = 'Token 0.1';
-    string public name = 'Dummy Constant Reserve Rate Token';
-    string public symbol = 'DBT';
+    string public name = 'DConstant Rate Token';
+    string public symbol = 'DCT';
     uint8 public decimals = 18;
-    uint256 public totalSupply = 0;
+    uint256 public totalSupply = 10000000000000000000000000;
 
     uint8 public ratio = 10; // CRR of 10%
 

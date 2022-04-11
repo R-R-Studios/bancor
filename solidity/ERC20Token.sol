@@ -1,12 +1,12 @@
 pragma solidity ^0.4.11;
 
-contract BasicERC20Token {
+contract ERC20Token {
     /* Public variables of the token */
     string public standard = 'Token 0.1';
-    string public name = 'Ivan\'s Trackable Token';
-    string public symbol = 'ITT';
+    string public name = 'TodaysIntelligenceTomorrowsSecuritys';
+    string public symbol = 'TITS';
     uint8 public decimals = 18;
-    uint256 public totalSupply = 0;
+    uint256 public totalSupply = 1000000000000000000000000000;
 
     /* This creates an array with all balances */
     mapping (address => uint256) public balances;
